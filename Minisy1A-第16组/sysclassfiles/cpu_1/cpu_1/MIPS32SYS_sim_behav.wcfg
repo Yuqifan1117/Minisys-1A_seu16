@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MIPS32SYS_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MIPS32SYS_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1621400000fs"></ZoomStartTime>
+      <ZoomEndTime time="1685700001fs"></ZoomEndTime>
+      <Cursor1Time time="10000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="153"></NameColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="94" />
+   <wvobject fp_name="/MIPS32SYS_sim/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/clocking/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IF0/i_pc" type="array">
+      <obj_property name="ElementShortName">i_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IF0/iaddr" type="array">
+      <obj_property name="ElementShortName">iaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/program_rom0/addra" type="array">
+      <obj_property name="ElementShortName">addra[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IF0/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/id_pc_i" type="array">
+      <obj_property name="ElementShortName">id_pc_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/id_inst_i" type="array">
+      <obj_property name="ElementShortName">id_inst_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_inst_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/syscall" type="logic">
+      <obj_property name="ElementShortName">syscall</obj_property>
+      <obj_property name="ObjectShortName">syscall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/cp0/exc_addr" type="array">
+      <obj_property name="ElementShortName">exc_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exc_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/rreg1" type="logic">
+      <obj_property name="ElementShortName">rreg1</obj_property>
+      <obj_property name="ObjectShortName">rreg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/rreg2" type="logic">
+      <obj_property name="ElementShortName">rreg2</obj_property>
+      <obj_property name="ObjectShortName">rreg2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/ra1" type="array">
+      <obj_property name="ElementShortName">ra1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/ra2" type="array">
+      <obj_property name="ElementShortName">ra2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ra2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/rd1" type="array">
+      <obj_property name="ElementShortName">rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/rd2" type="array">
+      <obj_property name="ElementShortName">rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/mem2reg" type="logic">
+      <obj_property name="ElementShortName">mem2reg</obj_property>
+      <obj_property name="ObjectShortName">mem2reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/stall_rep" type="logic">
+      <obj_property name="ElementShortName">stall_rep</obj_property>
+      <obj_property name="ObjectShortName">stall_rep</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/id_src1_o" type="array">
+      <obj_property name="ElementShortName">id_src1_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_src1_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/id_src2_o" type="array">
+      <obj_property name="ElementShortName">id_src2_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_src2_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/idexe_reg0/id_mreg" type="logic">
+      <obj_property name="ElementShortName">id_mreg</obj_property>
+      <obj_property name="ObjectShortName">id_mreg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/src1mem_e" type="logic">
+      <obj_property name="ElementShortName">src1mem_e</obj_property>
+      <obj_property name="ObjectShortName">src1mem_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/src2mem_e" type="logic">
+      <obj_property name="ElementShortName">src2mem_e</obj_property>
+      <obj_property name="ObjectShortName">src2mem_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/idexe_reg0/exe_src1" type="array">
+      <obj_property name="ElementShortName">exe_src1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/idexe_reg0/exe_src2" type="array">
+      <obj_property name="ElementShortName">exe_src2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/next_pc" type="array">
+      <obj_property name="ElementShortName">next_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_aluop_i" type="array">
+      <obj_property name="ElementShortName">exe_aluop_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_aluop_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_src1_i" type="array">
+      <obj_property name="ElementShortName">exe_src1_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src1_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_src2_i" type="array">
+      <obj_property name="ElementShortName">exe_src2_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src2_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_wd_o" type="array">
+      <obj_property name="ElementShortName">exe_wd_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_wd_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/mulres" type="array">
+      <obj_property name="ElementShortName">mulres[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mulres[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/divres" type="array">
+      <obj_property name="ElementShortName">divres[63:0]</obj_property>
+      <obj_property name="ObjectShortName">divres[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_whilo_o" type="logic">
+      <obj_property name="ElementShortName">exe_whilo_o</obj_property>
+      <obj_property name="ObjectShortName">exe_whilo_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_hi_o" type="array">
+      <obj_property name="ElementShortName">exe_hi_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_hi_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/exe_lo_o" type="array">
+      <obj_property name="ElementShortName">exe_lo_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_lo_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/hilo0/reghi" type="array">
+      <obj_property name="ElementShortName">reghi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reghi[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/hilo0/reglo" type="array">
+      <obj_property name="ElementShortName">reglo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reglo[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/en_branch" type="logic">
+      <obj_property name="ElementShortName">en_branch</obj_property>
+      <obj_property name="ObjectShortName">en_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exe_stage0/branchAddr" type="array">
+      <obj_property name="ElementShortName">branchAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branchAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/mem_wrAddr" type="array">
+      <obj_property name="ElementShortName">mem_wrAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wrAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/mem_wrData" type="array">
+      <obj_property name="ElementShortName">mem_wrData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wrData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/we" type="array">
+      <obj_property name="ElementShortName">we[3:0]</obj_property>
+      <obj_property name="ObjectShortName">we[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/mem_din_i" type="array">
+      <obj_property name="ElementShortName">mem_din_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_din_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/din_reverse" type="array">
+      <obj_property name="ElementShortName">din_reverse[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din_reverse[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/dmemory32/write_data3" type="array">
+      <obj_property name="ElementShortName">write_data3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/dmemory32/write_data2" type="array">
+      <obj_property name="ElementShortName">write_data2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/dmemory32/write_data1" type="array">
+      <obj_property name="ElementShortName">write_data1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/dmemory32/write_data0" type="array">
+      <obj_property name="ElementShortName">write_data0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/dre" type="array">
+      <obj_property name="ElementShortName">dre[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dre[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/dmemory32/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/memread_data" type="array">
+      <obj_property name="ElementShortName">memread_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memread_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/wb_stage0/wb_wreg_o" type="logic">
+      <obj_property name="ElementShortName">wb_wreg_o</obj_property>
+      <obj_property name="ObjectShortName">wb_wreg_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/wb_stage0/wb_wa_i" type="array">
+      <obj_property name="ElementShortName">wb_wa_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wa_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/wb_stage0/wb_wa_o" type="array">
+      <obj_property name="ElementShortName">wb_wa_o[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wa_o[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/wb_stage0/wb_wd_o" type="array">
+      <obj_property name="ElementShortName">wb_wd_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_wd_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/wa" type="array">
+      <obj_property name="ElementShortName">wa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/wd" type="array">
+      <obj_property name="ElementShortName">wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/exemem_reg0/exe_wreg" type="logic">
+      <obj_property name="ElementShortName">exe_wreg</obj_property>
+      <obj_property name="ObjectShortName">exe_wreg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/ID0/en_branch" type="logic">
+      <obj_property name="ElementShortName">en_branch</obj_property>
+      <obj_property name="ObjectShortName">en_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/mem_wd_i" type="array">
+      <obj_property name="ElementShortName">mem_wd_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wd_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/daddr" type="array">
+      <obj_property name="ElementShortName">daddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">daddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/daddrHigh" type="array">
+      <obj_property name="ElementShortName">daddrHigh[21:0]</obj_property>
+      <obj_property name="ObjectShortName">daddrHigh[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/IOwdata" type="array">
+      <obj_property name="ElementShortName">IOwdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IOwdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/IOwaddr" type="array">
+      <obj_property name="ElementShortName">IOwaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IOwaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/IOWrite" type="logic">
+      <obj_property name="ElementShortName">IOWrite</obj_property>
+      <obj_property name="ObjectShortName">IOWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/IORead" type="logic">
+      <obj_property name="ElementShortName">IORead</obj_property>
+      <obj_property name="ObjectShortName">IORead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/LEDCtrl" type="logic">
+      <obj_property name="ElementShortName">LEDCtrl</obj_property>
+      <obj_property name="ObjectShortName">LEDCtrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/LEDCtrl_s" type="array">
+      <obj_property name="ElementShortName">LEDCtrl_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">LEDCtrl_s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/inst_sb" type="logic">
+      <obj_property name="ElementShortName">inst_sb</obj_property>
+      <obj_property name="ObjectShortName">inst_sb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/inst_sh" type="logic">
+      <obj_property name="ElementShortName">inst_sh</obj_property>
+      <obj_property name="ObjectShortName">inst_sh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/mem_stage0/IOdin" type="array">
+      <obj_property name="ElementShortName">IOdin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IOdin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/IOwdata" type="array">
+      <obj_property name="ElementShortName">IOwdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IOwdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/caddress" type="array">
+      <obj_property name="ElementShortName">caddress[31:0]</obj_property>
+      <obj_property name="ObjectShortName">caddress[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/ioread_data" type="array">
+      <obj_property name="ElementShortName">ioread_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ioread_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/iowrite" type="logic">
+      <obj_property name="ElementShortName">iowrite</obj_property>
+      <obj_property name="ObjectShortName">iowrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[0]" type="array">
+      <obj_property name="ElementShortName">[0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[1]" type="array">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[2]" type="array">
+      <obj_property name="ElementShortName">[2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[3]" type="array">
+      <obj_property name="ElementShortName">[3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[4]" type="array">
+      <obj_property name="ElementShortName">[4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/regfile0/regs[31]" type="array">
+      <obj_property name="ElementShortName">[31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/switch2N4" type="array">
+      <obj_property name="ElementShortName">switch2N4[23:0]</obj_property>
+      <obj_property name="ObjectShortName">switch2N4[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/led2N4" type="array">
+      <obj_property name="ElementShortName">led2N4[23:0]</obj_property>
+      <obj_property name="ObjectShortName">led2N4[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/wb_stage0/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/mips32/IORW0/IOwdata" type="array">
+      <obj_property name="ElementShortName">IOwdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IOwdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32SYS_sim/MIPS32_SYS0/LED0/ledwdata" type="array">
+      <obj_property name="ElementShortName">ledwdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledwdata[15:0]</obj_property>
+   </wvobject>
+</wave_config>

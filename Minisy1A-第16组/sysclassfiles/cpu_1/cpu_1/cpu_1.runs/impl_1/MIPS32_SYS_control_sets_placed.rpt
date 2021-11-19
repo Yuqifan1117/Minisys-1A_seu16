@@ -1,0 +1,160 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Jan 17 11:39:25 2021
+| Host         : LAPTOP-K2S8R4BM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MIPS32_SYS_control_sets_placed.rpt
+| Design       : MIPS32_SYS
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    93 |
+| Unused register locations in slices containing registers |    79 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             119 |           60 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1818 |          901 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1224 |          812 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------------------+---------------------------------------+------------------+----------------+
+|              Clock Signal              |               Enable Signal              |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------------------------+------------------------------------------+---------------------------------------+------------------+----------------+
+|  nixieTube0/DP_out_reg_i_2_n_8         |                                          |                                       |                1 |              1 |
+| ~clocking/inst/clk_out1                |                                          |                                       |                1 |              1 |
+|  mips32/ID0/regs_reg[29][31]_0[0]      |                                          | sys_rst_n_IBUF                        |                2 |              5 |
+|  mips32/ID0/regs_reg[29][31]_2[0]      |                                          | sys_rst_n_IBUF                        |                2 |              5 |
+| ~nixieTube0/refreshMes                 |                                          | nixieTube0/choose[7]_i_1_n_8          |                2 |              7 |
+|  clocking/inst/clk_out1                | mips32/exemem_reg0/ledData_reg[23][1]    | sys_rst_n_IBUF                        |                4 |              8 |
+| ~nixieTube0/refreshMes                 |                                          |                                       |                2 |              9 |
+|  mips32/IR_reg0/regs_reg[29][15][0]    |                                          | sys_rst_n_IBUF                        |                5 |             11 |
+| ~mips32/IR_reg0/iaddr_reg[15]_i_5_n_8  |                                          | sys_rst_n_IBUF                        |                8 |             14 |
+|  mips32/exemem_reg0/E[0]               |                                          |                                       |                5 |             16 |
+|  mips32/exemem_reg0/nixieTubeC[2][0]   |                                          |                                       |                5 |             16 |
+|  mips32/exemem_reg0/nixieTubeC[2]_0[0] |                                          |                                       |                5 |             16 |
+|  mips32/ID0/regs_reg[29][31]_0[1]      |                                          | sys_rst_n_IBUF                        |                6 |             16 |
+|  clocking/inst/clk_out1                | mips32/exemem_reg0/ledData_reg[23][0]    | sys_rst_n_IBUF                        |                8 |             16 |
+|  clocking/inst/clk_out1                | mips32/exemem_reg0/switchData_reg[15][0] | sys_rst_n_IBUF                        |                4 |             16 |
+|  clk_BUFG                              |                                          | nixieTube0/count[0]_i_1_n_8           |                5 |             17 |
+|  mips32/ID0/regs_reg[29][31]_2[0]      |                                          | mips32/IR_reg0/AR[0]                  |               12 |             27 |
+|  clocking/inst/clk_out1                |                                          | mips32/IR_reg0/SR[0]                  |               20 |             27 |
+|  mips32/ID0/regs_reg[29][31]_5[0]      |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_15[0]     |                                          | sys_rst_n_IBUF                        |               16 |             32 |
+|  mips32/ID0/regs_reg[29][31]_21[0]     |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_4[0]      |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_13[0]     |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_14[0]     |                                          | sys_rst_n_IBUF                        |               17 |             32 |
+|  mips32/ID0/regs_reg[29][31]_16[0]     |                                          | sys_rst_n_IBUF                        |               17 |             32 |
+|  mips32/ID0/regs_reg[29][31]_17[0]     |                                          | sys_rst_n_IBUF                        |               20 |             32 |
+|  mips32/ID0/regs_reg[29][31]_20[0]     |                                          | sys_rst_n_IBUF                        |               13 |             32 |
+|  mips32/ID0/regs_reg[29][31]_23[0]     |                                          | sys_rst_n_IBUF                        |               12 |             32 |
+|  mips32/ID0/regs_reg[29][31]_24[0]     |                                          | sys_rst_n_IBUF                        |               16 |             32 |
+|  mips32/ID0/regs_reg[29][31]_25[0]     |                                          | sys_rst_n_IBUF                        |               19 |             32 |
+|  mips32/ID0/regs_reg[29][31]_11[0]     |                                          | sys_rst_n_IBUF                        |               15 |             32 |
+|  mips32/ID0/regs_reg[29][31]_6[0]      |                                          | sys_rst_n_IBUF                        |               15 |             32 |
+|  mips32/ID0/regs_reg[29][31]_7[0]      |                                          | sys_rst_n_IBUF                        |               15 |             32 |
+|  mips32/ID0/regs_reg[29][31]_18[0]     |                                          | sys_rst_n_IBUF                        |               12 |             32 |
+|  mips32/ID0/regs_reg[29][31]_10[0]     |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_19[0]     |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/ID0/regs_reg[29][31]_9[0]      |                                          | sys_rst_n_IBUF                        |               19 |             32 |
+|  mips32/ID0/regs_reg[29][31]_8[0]      |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  mips32/idexe_reg0/reghi_reg[31][0]    |                                          | sys_rst_n_IBUF                        |               19 |             32 |
+|  clk_BUFG                              |                                          | mips32/exemem_reg0/exe_din_reg[31]    |               22 |             32 |
+|  n_6_2667_BUFG                         |                                          | sys_rst_n_IBUF                        |               20 |             32 |
+|  n_4_2656_BUFG                         |                                          | sys_rst_n_IBUF                        |               17 |             32 |
+|  n_5_2664_BUFG                         |                                          | sys_rst_n_IBUF                        |               20 |             32 |
+|  mfc0                                  |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  n_7_2648_BUFG                         |                                          | sys_rst_n_IBUF                        |               20 |             32 |
+|  n_3_2652_BUFG                         |                                          | sys_rst_n_IBUF                        |               19 |             32 |
+|  n_1_2596_BUFG                         |                                          | sys_rst_n_IBUF                        |               12 |             32 |
+|  n_0_1920_BUFG                         |                                          | sys_rst_n_IBUF                        |               21 |             32 |
+|  n_2_2645_BUFG                         |                                          | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/E[0]                          | sys_rst_n_IBUF                        |               25 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[29][31][0]           | sys_rst_n_IBUF                        |               25 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[18][31][0]           | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[22][31][0]           | sys_rst_n_IBUF                        |               18 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[15][31][0]           | sys_rst_n_IBUF                        |               25 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[13][31][0]           | sys_rst_n_IBUF                        |               21 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[14][31][0]           | sys_rst_n_IBUF                        |               21 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[16][31][0]           | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[0][31][0]            | sys_rst_n_IBUF                        |               24 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[20][31][0]           | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[1][31][0]            | sys_rst_n_IBUF                        |               23 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[10][31][0]           | sys_rst_n_IBUF                        |               22 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[17][31][0]           | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[25][31][0]           | sys_rst_n_IBUF                        |               23 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[9][31][0]            | sys_rst_n_IBUF                        |               27 |             32 |
+|  clocking/inst/clk_out1                | mips32/ID0/regs_reg[31][31]_0[0]         | sys_rst_n_IBUF                        |                6 |             32 |
+|  clocking/inst/clk_out1                | mips32/IR_reg0/E[0]                      | sys_rst_n_IBUF                        |               15 |             32 |
+|  mips32/ID0/regs_reg[29][31]_12[0]     |                                          | sys_rst_n_IBUF                        |               16 |             32 |
+|  mips32/ID0/regs_reg[29][31]_22[0]     |                                          | sys_rst_n_IBUF                        |               14 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/E[0]                   | sys_rst_n_IBUF                        |               21 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[21][31][0]    | sys_rst_n_IBUF                        |               18 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[30][31][0]    | sys_rst_n_IBUF                        |               24 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[4][31][0]     | sys_rst_n_IBUF                        |               21 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[7][31][0]     | sys_rst_n_IBUF                        |               27 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[3][31][0]     | sys_rst_n_IBUF                        |               25 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[12][31][0]    | sys_rst_n_IBUF                        |               19 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[24][31][0]    | sys_rst_n_IBUF                        |               26 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[19][31][0]    | sys_rst_n_IBUF                        |               22 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[28][31][0]    | sys_rst_n_IBUF                        |               28 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[5][31][0]     | sys_rst_n_IBUF                        |               23 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[8][31][0]     | sys_rst_n_IBUF                        |               27 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[2][31][0]     | sys_rst_n_IBUF                        |               25 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[27][31][0]    | sys_rst_n_IBUF                        |               26 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[6][31][0]     | sys_rst_n_IBUF                        |               24 |             32 |
+|  clocking/inst/clk_out1                | mips32/memwb_reg0/regs_reg[23][31][0]    | sys_rst_n_IBUF                        |               24 |             32 |
+|  mips32/ID0/regs_reg[29][31]_3[0]      |                                          | sys_rst_n_IBUF                        |               13 |             32 |
+|  ID0/reg31sel                          |                                          | sys_rst_n_IBUF                        |               10 |             33 |
+|  clocking/inst/clk_out1                |                                          |                                       |               41 |             60 |
+|  clocking/inst/clk_out1                | mips32/idexe_reg0/E[0]                   | sys_rst_n_IBUF                        |               35 |             64 |
+|  exe_stage0/mult_src10                 |                                          | sys_rst_n_IBUF                        |               24 |             64 |
+| ~clocking/inst/clk_out1                | mips32/IR_reg0/E[0]                      | mips32/exe_stage0/id_inst_i_reg[0][0] |               30 |             64 |
+| ~clocking/inst/clk_out1                |                                          | sys_rst_n_IBUF                        |               68 |            121 |
+| ~clocking/inst/clk_out1                |                                          | mips32/IR_reg0/exe_wreg_reg_1         |               74 |            146 |
+|  clocking/inst/clk_out1                |                                          | sys_rst_n_IBUF                        |              113 |            237 |
++----------------------------------------+------------------------------------------+---------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 5      |                     2 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 11     |                     1 |
+| 14     |                     1 |
+| 16+    |                    84 |
++--------+-----------------------+
+
+

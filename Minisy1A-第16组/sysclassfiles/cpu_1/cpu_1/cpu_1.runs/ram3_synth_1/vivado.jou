@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jan 17 09:29:28 2021
+# Process ID: 21452
+# Current directory: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/ram3_synth_1
+# Command line: vivado.exe -log ram3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram3.tcl
+# Log file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/ram3_synth_1/ram3.vds
+# Journal file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/ram3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ram3.tcl -notrace

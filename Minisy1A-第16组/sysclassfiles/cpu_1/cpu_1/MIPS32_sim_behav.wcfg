@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MIPS32_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MIPS32_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="31700001fs"></ZoomEndTime>
+      <Cursor1Time time="1010000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/MIPS32_sim/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/id_inst_i" type="array">
+      <obj_property name="ElementShortName">id_inst_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_inst_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/IF0/i_pc" type="array">
+      <obj_property name="ElementShortName">i_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/IF0/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/IF0/iaddr" type="array">
+      <obj_property name="ElementShortName">iaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/ID0/id_pc_i" type="array">
+      <obj_property name="ElementShortName">id_pc_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/ID0/next_pc" type="array">
+      <obj_property name="ElementShortName">next_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">next_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/exe_stage0/exe_src1_i" type="array">
+      <obj_property name="ElementShortName">exe_src1_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src1_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/exe_stage0/exe_src2_i" type="array">
+      <obj_property name="ElementShortName">exe_src2_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_src2_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/exe_stage0/exe_wd_o" type="array">
+      <obj_property name="ElementShortName">exe_wd_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_wd_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/idexe_reg0/id_pc_o" type="array">
+      <obj_property name="ElementShortName">id_pc_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_pc_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS32_sim/MIPS32_0/idexe_reg0/if_pc_i" type="array">
+      <obj_property name="ElementShortName">if_pc_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_pc_i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

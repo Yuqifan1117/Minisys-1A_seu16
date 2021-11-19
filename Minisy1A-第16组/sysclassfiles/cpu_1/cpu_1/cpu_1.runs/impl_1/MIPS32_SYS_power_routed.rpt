@@ -1,0 +1,487 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date             : Sun Jan 17 11:42:40 2021
+| Host             : LAPTOP-K2S8R4BM running 64-bit major release  (build 9200)
+| Command          : report_power -file MIPS32_SYS_power_routed.rpt -pb MIPS32_SYS_power_summary_routed.pb -rpx MIPS32_SYS_power_routed.rpx
+| Design           : MIPS32_SYS
+| Device           : xc7a100tfgg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.276        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.191        |
+| Device Static (W)        | 0.086        |
+| Effective TJA (C/W)      | 2.7          |
+| Max Ambient (C)          | 84.3         |
+| Junction Temperature (C) | 25.7         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.007 |        5 |       --- |             --- |
+| Slice Logic    |     0.037 |    14544 |       --- |             --- |
+|   LUT as Logic |     0.032 |     7208 |     63400 |           11.37 |
+|   CARRY4       |     0.005 |     1251 |     15850 |            7.89 |
+|   Register     |    <0.001 |     3161 |    126800 |            2.49 |
+|   F7/F8 Muxes  |    <0.001 |      529 |     63400 |            0.83 |
+|   BUFG         |    <0.001 |       11 |        32 |           34.38 |
+|   Others       |     0.000 |     1023 |       --- |             --- |
+| Signals        |     0.040 |    11272 |       --- |             --- |
+| Block RAM      |     0.009 |     30.5 |       135 |           22.59 |
+| PLL            |     0.097 |        1 |         6 |           16.67 |
+| I/O            |    <0.001 |       70 |       285 |           24.56 |
+| Static Power   |     0.086 |          |           |                 |
+| Total          |     0.276 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.116 |       0.100 |      0.016 |
+| Vccaux    |       1.800 |     0.068 |       0.050 |      0.018 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.7                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+----------------------------------+-----------------+
+| Clock              | Domain                           | Constraint (ns) |
++--------------------+----------------------------------+-----------------+
+| clk_out1_clk_wiz_0 | clocking/inst/clk_out1_clk_wiz_0 |            20.0 |
+| clkfbout_clk_wiz_0 | clocking/inst/clkfbout_clk_wiz_0 |            20.0 |
+| sys_clk_100M       | sys_clk_100M                     |            10.0 |
++--------------------+----------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------------------------------+-----------+
+| Name                                                          | Power (W) |
++---------------------------------------------------------------+-----------+
+| MIPS32_SYS                                                    |     0.191 |
+|   LED0                                                        |    <0.001 |
+|   clocking                                                    |     0.097 |
+|     inst                                                      |     0.097 |
+|   dialSwitch0                                                 |    <0.001 |
+|   dmemory32                                                   |     0.005 |
+|     ram0                                                      |     0.001 |
+|       U0                                                      |     0.001 |
+|         inst_blk_mem_gen                                      |     0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                |     0.001 |
+|             valid.cstr                                        |     0.001 |
+|               bindec_a.bindec_inst_a                          |    <0.001 |
+|               has_mux_a.A                                     |    <0.001 |
+|               ramloop[0].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[1].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[2].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[3].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|     ram1                                                      |     0.001 |
+|       U0                                                      |     0.001 |
+|         inst_blk_mem_gen                                      |     0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                |     0.001 |
+|             valid.cstr                                        |     0.001 |
+|               bindec_a.bindec_inst_a                          |    <0.001 |
+|               has_mux_a.A                                     |    <0.001 |
+|               ramloop[0].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[1].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[2].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[3].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|     ram2                                                      |     0.001 |
+|       U0                                                      |     0.001 |
+|         inst_blk_mem_gen                                      |     0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                |     0.001 |
+|             valid.cstr                                        |     0.001 |
+|               bindec_a.bindec_inst_a                          |    <0.001 |
+|               has_mux_a.A                                     |    <0.001 |
+|               ramloop[0].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[1].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[2].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[3].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|     ram3                                                      |     0.001 |
+|       U0                                                      |     0.001 |
+|         inst_blk_mem_gen                                      |     0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                |     0.001 |
+|             valid.cstr                                        |     0.001 |
+|               bindec_a.bindec_inst_a                          |    <0.001 |
+|               has_mux_a.A                                     |    <0.001 |
+|               ramloop[0].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[1].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[2].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|               ramloop[3].ram.r                                |    <0.001 |
+|                 prim_init.ram                                 |    <0.001 |
+|   mips32                                                      |     0.082 |
+|     ID0                                                       |     0.002 |
+|       PCAddFour                                               |    <0.001 |
+|       PCAddImm_en                                             |    <0.001 |
+|     IF0                                                       |    <0.001 |
+|     IR_reg0                                                   |     0.006 |
+|     cp0                                                       |     0.003 |
+|     exe_stage0                                                |     0.058 |
+|       div                                                     |     0.026 |
+|         U0                                                    |     0.026 |
+|           i_synth                                             |     0.026 |
+|             i_nonzero_fract.i_synth                           |     0.026 |
+|               i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider |     0.026 |
+|                 i_sdivider.divider_blk                        |     0.026 |
+|                   div_loop[0].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[10].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[11].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[12].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[13].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[14].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[15].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[16].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[17].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[18].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[19].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[1].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[20].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[21].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[22].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[23].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[24].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[25].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[26].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[27].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[28].adder_gen.reg_req.adsu_mod     |     0.001 |
+|                     add1                                      |     0.001 |
+|                       no_pipelining.the_addsub                |     0.001 |
+|                   div_loop[29].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[2].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[30].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[31].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[3].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[4].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[5].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[6].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[7].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[8].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[9].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   remd_output.adsu_sel3                       |     0.002 |
+|                     add1                                      |     0.002 |
+|                       no_pipelining.the_addsub                |     0.002 |
+|       divu                                                    |     0.025 |
+|         U0                                                    |     0.025 |
+|           i_synth                                             |     0.025 |
+|             i_nonzero_fract.i_synth                           |     0.025 |
+|               i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider |     0.025 |
+|                 i_sdivider.divider_blk                        |     0.025 |
+|                   div_loop[0].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[10].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[11].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[12].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[13].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[14].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[15].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[16].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[17].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[18].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[19].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[1].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[20].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[21].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[22].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[23].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[24].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[25].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[26].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[27].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[28].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[29].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[2].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[30].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[31].adder_gen.reg_req.adsu_mod     |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[3].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[4].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[5].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[6].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[7].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[8].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   div_loop[9].adder_gen.reg_req.adsu_mod      |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|                   remd_output.adsu_sel3                       |    <0.001 |
+|                     add1                                      |    <0.001 |
+|                       no_pipelining.the_addsub                |    <0.001 |
+|       mult                                                    |     0.002 |
+|         U0                                                    |     0.002 |
+|           i_mult                                              |     0.002 |
+|             gLUT.gLUT_speed.iLUT                              |     0.002 |
+|       multu                                                   |     0.002 |
+|         U0                                                    |     0.002 |
+|           i_mult                                              |     0.002 |
+|             gLUT.gLUT_speed.iLUT                              |     0.002 |
+|     exemem_reg0                                               |    <0.001 |
+|     hilo0                                                     |    <0.001 |
+|     idexe_reg0                                                |     0.005 |
+|     mem_stage0                                                |    <0.001 |
+|     memwb_reg0                                                |     0.002 |
+|     regfile0                                                  |     0.005 |
+|   nixieTube0                                                  |    <0.001 |
+|   program_rom0                                                |     0.006 |
+|     U0                                                        |     0.006 |
+|       inst_blk_mem_gen                                        |     0.006 |
+|         gnbram.gnativebmg.native_blk_mem_gen                  |     0.006 |
+|           valid.cstr                                          |     0.006 |
+|             bindec_a.bindec_inst_a                            |    <0.001 |
+|             has_mux_a.A                                       |    <0.001 |
+|             ramloop[0].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[10].ram.r                                 |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[11].ram.r                                 |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[12].ram.r                                 |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[13].ram.r                                 |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[14].ram.r                                 |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[1].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[2].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[3].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[4].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[5].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[6].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[7].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[8].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
+|             ramloop[9].ram.r                                  |    <0.001 |
+|               prim_init.ram                                   |    <0.001 |
++---------------------------------------------------------------+-----------+
+
+

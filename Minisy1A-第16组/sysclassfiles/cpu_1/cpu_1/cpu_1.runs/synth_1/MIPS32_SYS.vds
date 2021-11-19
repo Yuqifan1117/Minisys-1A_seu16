@@ -1,0 +1,1042 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jan 17 11:33:16 2021
+# Process ID: 11692
+# Current directory: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1
+# Command line: vivado.exe -log MIPS32_SYS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS32_SYS.tcl
+# Log file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/MIPS32_SYS.vds
+# Journal file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MIPS32_SYS.tcl -notrace
+Command: synth_design -top MIPS32_SYS -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19152 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 411.191 ; gain = 104.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS32_SYS' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32_SYS.v:26]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'program_rom0' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/program_rom0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'program_rom0' (2#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/program_rom0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'MIPS32' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:25]
+INFO: [Synth 8-638] synthesizing module 'IF' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:51]
+INFO: [Synth 8-256] done synthesizing module 'IF' (3#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:51]
+INFO: [Synth 8-638] synthesizing module 'IR_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:177]
+INFO: [Synth 8-256] done synthesizing module 'IR_reg' (4#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:177]
+INFO: [Synth 8-638] synthesizing module 'ID' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:220]
+INFO: [Synth 8-638] synthesizing module 'PCAddFour' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:146]
+INFO: [Synth 8-256] done synthesizing module 'PCAddFour' (5#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:146]
+INFO: [Synth 8-638] synthesizing module 'PCJump' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:118]
+WARNING: [Synth 8-567] referenced signal 'pc' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:124]
+INFO: [Synth 8-256] done synthesizing module 'PCJump' (6#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:118]
+INFO: [Synth 8-638] synthesizing module 'SignExtend' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:156]
+INFO: [Synth 8-226] default block is never used [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:164]
+INFO: [Synth 8-256] done synthesizing module 'SignExtend' (7#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:156]
+INFO: [Synth 8-638] synthesizing module 'PCAddImm' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:135]
+INFO: [Synth 8-256] done synthesizing module 'PCAddImm' (8#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:135]
+INFO: [Synth 8-638] synthesizing module 'DataSelector_4to1' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/DataSelector_4to1.v:32]
+INFO: [Synth 8-256] done synthesizing module 'DataSelector_4to1' (9#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/DataSelector_4to1.v:32]
+WARNING: [Synth 8-3848] Net ri in module/entity ID does not have driver. [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:280]
+INFO: [Synth 8-256] done synthesizing module 'ID' (10#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:220]
+WARNING: [Synth 8-350] instance 'ID0' of module 'ID' requires 47 connections, but only 46 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:176]
+INFO: [Synth 8-638] synthesizing module 'regfile' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:563]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (11#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:563]
+INFO: [Synth 8-638] synthesizing module 'idexe_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:667]
+INFO: [Synth 8-256] done synthesizing module 'idexe_reg' (12#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:667]
+INFO: [Synth 8-638] synthesizing module 'exe_stage' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:775]
+INFO: [Synth 8-638] synthesizing module 'multu' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/multu_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'multu' (13#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/multu_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'mult' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/mult_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mult' (14#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/mult_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'divu' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/divu_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'divu' (15#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/divu_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'div' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/div_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'div' (16#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/div_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'exe_stage' (17#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:775]
+INFO: [Synth 8-638] synthesizing module 'exemem_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1112]
+INFO: [Synth 8-256] done synthesizing module 'exemem_reg' (18#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1112]
+INFO: [Synth 8-638] synthesizing module 'mem_stage' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1173]
+INFO: [Synth 8-256] done synthesizing module 'mem_stage' (19#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1173]
+WARNING: [Synth 8-350] instance 'mem_stage0' of module 'mem_stage' requires 31 connections, but only 27 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+INFO: [Synth 8-638] synthesizing module 'IORW' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1349]
+INFO: [Synth 8-256] done synthesizing module 'IORW' (20#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1349]
+INFO: [Synth 8-638] synthesizing module 'memwb_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1392]
+INFO: [Synth 8-256] done synthesizing module 'memwb_reg' (21#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1392]
+WARNING: [Synth 8-350] instance 'memwb_reg0' of module 'memwb_reg' requires 18 connections, but only 14 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+INFO: [Synth 8-638] synthesizing module 'wb_stage' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1445]
+INFO: [Synth 8-256] done synthesizing module 'wb_stage' (22#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1445]
+WARNING: [Synth 8-350] instance 'wb_stage0' of module 'wb_stage' requires 16 connections, but only 12 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:260]
+INFO: [Synth 8-638] synthesizing module 'hilo' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1070]
+INFO: [Synth 8-256] done synthesizing module 'hilo' (23#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1070]
+INFO: [Synth 8-638] synthesizing module 'ctrl' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1497]
+INFO: [Synth 8-256] done synthesizing module 'ctrl' (24#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:1497]
+INFO: [Synth 8-638] synthesizing module 'CP0' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CP0' (25#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:23]
+WARNING: [Synth 8-350] instance 'cp0' of module 'CP0' requires 16 connections, but only 14 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:279]
+WARNING: [Synth 8-3848] Net NixieTubeCtrl in module/entity MIPS32 does not have driver. [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:49]
+INFO: [Synth 8-256] done synthesizing module 'MIPS32' (26#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:25]
+WARNING: [Synth 8-350] instance 'mips32' of module 'MIPS32' requires 25 connections, but only 24 given [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32_SYS.v:80]
+INFO: [Synth 8-638] synthesizing module 'dmemory32' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/dmemory32.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram0' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram0' (27#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ram1' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram1' (28#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ram2' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram2' (29#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ram3' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram3' (30#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/realtime/ram3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dmemory32' (31#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/dmemory32.v:23]
+INFO: [Synth 8-638] synthesizing module 'LED' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/LED.v:23]
+INFO: [Synth 8-256] done synthesizing module 'LED' (32#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/LED.v:23]
+INFO: [Synth 8-638] synthesizing module 'dialSwitch' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/dialSwitch.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dialSwitch' (33#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/dialSwitch.v:23]
+INFO: [Synth 8-638] synthesizing module 'nixieTube' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:23]
+WARNING: [Synth 8-567] referenced signal 'lowData' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:77]
+WARNING: [Synth 8-567] referenced signal 'specialDis' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:77]
+WARNING: [Synth 8-567] referenced signal 'highData' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:77]
+INFO: [Synth 8-226] default block is never used [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:93]
+WARNING: [Synth 8-567] referenced signal 'lowData_in' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:113]
+WARNING: [Synth 8-567] referenced signal 'highData_in' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:117]
+WARNING: [Synth 8-567] referenced signal 'specialDis_in' should be on the sensitivity list [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:121]
+INFO: [Synth 8-256] done synthesizing module 'nixieTube' (34#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (35#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MIPS32_SYS' (36#1) [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32_SYS.v:26]
+WARNING: [Synth 8-3331] design keyboard has unconnected port line[3]
+WARNING: [Synth 8-3331] design keyboard has unconnected port line[2]
+WARNING: [Synth 8-3331] design keyboard has unconnected port line[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port line[0]
+WARNING: [Synth 8-3331] design keyboard has unconnected port reset
+WARNING: [Synth 8-3331] design CP0 has unconnected port clk
+WARNING: [Synth 8-3331] design CP0 has unconnected port ie
+WARNING: [Synth 8-3331] design wb_stage has unconnected port cpu_clk
+WARNING: [Synth 8-3331] design IORW has unconnected port cpu_clk
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[1]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[0]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[27]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[26]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[25]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[24]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[23]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[22]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[21]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[20]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[19]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[18]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[17]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[16]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[15]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[14]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[13]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[12]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[11]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[10]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[9]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[8]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[7]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[6]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[5]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[4]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[3]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[2]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[1]
+WARNING: [Synth 8-3331] design PCJump has unconnected port pc[0]
+WARNING: [Synth 8-3331] design ID has unconnected port ri
+WARNING: [Synth 8-3331] design ID has unconnected port en_branch
+WARNING: [Synth 8-3331] design IR_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design IR_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design IR_reg has unconnected port stall[3]
+WARNING: [Synth 8-3331] design IR_reg has unconnected port stall[0]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[5]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[4]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[3]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[2]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[1]
+WARNING: [Synth 8-3331] design MIPS32 has unconnected port NixieTubeCtrl
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 592.129 ; gain = 285.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_whilo_i to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[63] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[62] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[61] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[60] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[59] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[58] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[57] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[56] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[55] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[54] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[53] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[52] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[51] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[50] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[49] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[48] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[47] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[46] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[45] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[44] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[43] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[42] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[41] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[40] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[39] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[38] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[37] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[36] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[35] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[34] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[33] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[32] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[31] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[30] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[29] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[28] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[27] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[26] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[25] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[24] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[23] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[22] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[21] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[20] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[19] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[18] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[17] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[16] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[15] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[14] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[13] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[12] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[11] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[10] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[9] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[8] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[7] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[6] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[5] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[4] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[3] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[2] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[1] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin mem_stage0:mem_hilo_i[0] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:235]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_whilo to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[63] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[62] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[61] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[60] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[59] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[58] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[57] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[56] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[55] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[54] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[53] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[52] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[51] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[50] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[49] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[48] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[47] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[46] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[45] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[44] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[43] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[42] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[41] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[40] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[39] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[38] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[37] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[36] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[35] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[34] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[33] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[32] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[31] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+WARNING: [Synth 8-3295] tying undriven pin memwb_reg0:mem_hilo[30] to constant 0 [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/MIPS32.v:251]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 592.129 ; gain = 285.418
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp10/clk_wiz_0_in_context.xdc] for cell 'clocking'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp10/clk_wiz_0_in_context.xdc] for cell 'clocking'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp11/multu_in_context.xdc] for cell 'mips32/exe_stage0/multu'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp11/multu_in_context.xdc] for cell 'mips32/exe_stage0/multu'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp12/mult_in_context.xdc] for cell 'mips32/exe_stage0/mult'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp12/mult_in_context.xdc] for cell 'mips32/exe_stage0/mult'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp13/div_in_context.xdc] for cell 'mips32/exe_stage0/div'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp13/div_in_context.xdc] for cell 'mips32/exe_stage0/div'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp14/divu_in_context.xdc] for cell 'mips32/exe_stage0/divu'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp14/divu_in_context.xdc] for cell 'mips32/exe_stage0/divu'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp15/ram3_in_context.xdc] for cell 'dmemory32/ram3'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp15/ram3_in_context.xdc] for cell 'dmemory32/ram3'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp16/ram0_in_context.xdc] for cell 'dmemory32/ram0'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp16/ram0_in_context.xdc] for cell 'dmemory32/ram0'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp17/ram1_in_context.xdc] for cell 'dmemory32/ram1'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp17/ram1_in_context.xdc] for cell 'dmemory32/ram1'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp18/ram2_in_context.xdc] for cell 'dmemory32/ram2'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp18/ram2_in_context.xdc] for cell 'dmemory32/ram2'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp19/program_rom0_in_context.xdc] for cell 'program_rom0'
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp19/program_rom0_in_context.xdc] for cell 'program_rom0'
+Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/constrs_1/new/Minisys.xdc]
+Finished Parsing XDC File [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/constrs_1/new/Minisys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/constrs_1/new/Minisys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS32_SYS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS32_SYS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 845.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 845.434 ; gain = 538.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 845.434 ; gain = 538.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_100M. (constraint file  E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp10/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_100M. (constraint file  E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/.Xil/Vivado-11692-LAPTOP-K2S8R4BM/dcp10/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clocking. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dmemory32/ram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dmemory32/ram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dmemory32/ram2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dmemory32/ram3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mips32/exe_stage0/div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mips32/exe_stage0/divu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mips32/exe_stage0/mult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mips32/exe_stage0/multu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for program_rom0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 845.434 ; gain = 538.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "iaddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "PCSrc1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "id_aluop_o" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "id_src1_o" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axis_divisor_tvalid0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_axis_divisor_tvalid_u0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cp0_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "exc_addr0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cp0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'iaddr_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'reg31data_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:536]
+WARNING: [Synth 8-327] inferring latch for variable 'wreg31_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:537]
+WARNING: [Synth 8-327] inferring latch for variable 'exe_hi_o_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:988]
+WARNING: [Synth 8-327] inferring latch for variable 'exe_lo_o_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:989]
+WARNING: [Synth 8-327] inferring latch for variable 'mult_src2_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:951]
+WARNING: [Synth 8-327] inferring latch for variable 'mult_src1_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/Main.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'rdata_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[12]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[14]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[0]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[1]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[2]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[3]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[4]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[5]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[6]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[7]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[8]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[9]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[10]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[11]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[13]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[15]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[16]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[17]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[18]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[19]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[20]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[21]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[22]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[23]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[24]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[25]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[26]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[27]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[28]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[29]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[30]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'cp0_reg[31]' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/CP0.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'lowData_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'highData_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'DP_out_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'specialDis_reg' [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:123]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 845.434 ; gain = 538.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 44    
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 73    
+	   4 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 3     
+	  15 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 82    
+	   3 Input      1 Bit        Muxes := 32    
+	   7 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module IF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module IR_reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PCAddFour 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module SignExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PCAddImm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DataSelector_4to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 32    
+Module idexe_reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module exe_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 13    
+	  15 Input     32 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module mem_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   8 Input      2 Bit        Muxes := 1     
+Module IORW 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module wb_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 15    
+	   2 Input      5 Bit        Muxes := 1     
+Module hilo 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module CP0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+Module dmemory32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module LED 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module dialSwitch 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module nixieTube 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "iaddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element nixieTube0/count_reg was removed.  [E:/sysclassfiles/cpu_1/cpu_1/cpu_1.srcs/sources_1/new/nixieTube.v:70]
+WARNING: [Synth 8-3917] design MIPS32_SYS has port row[3] driven by constant 0
+WARNING: [Synth 8-3917] design MIPS32_SYS has port row[2] driven by constant 0
+WARNING: [Synth 8-3917] design MIPS32_SYS has port row[1] driven by constant 0
+WARNING: [Synth 8-3917] design MIPS32_SYS has port row[0] driven by constant 0
+WARNING: [Synth 8-3331] design CP0 has unconnected port clk
+WARNING: [Synth 8-3331] design CP0 has unconnected port ie
+WARNING: [Synth 8-3331] design wb_stage has unconnected port cpu_clk
+WARNING: [Synth 8-3331] design IORW has unconnected port cpu_clk
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[5]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[4]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[1]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ID has unconnected port ri
+WARNING: [Synth 8-3331] design ID has unconnected port en_branch
+WARNING: [Synth 8-3331] design IF has unconnected port stall[5]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[4]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[3]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[2]
+WARNING: [Synth 8-3331] design IF has unconnected port stall[1]
+WARNING: [Synth 8-3331] design MIPS32 has unconnected port NixieTubeCtrl
+WARNING: [Synth 8-3331] design MIPS32_SYS has unconnected port line[3]
+WARNING: [Synth 8-3331] design MIPS32_SYS has unconnected port line[2]
+WARNING: [Synth 8-3331] design MIPS32_SYS has unconnected port line[1]
+WARNING: [Synth 8-3331] design MIPS32_SYS has unconnected port line[0]
+INFO: [Synth 8-3886] merging instance 'mips32/ID0/id_aluop_o_reg[7]' (FDR) to 'mips32/ID0/id_aluop_o_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mips32/ID0/\id_aluop_o_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[31]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[30]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[29]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[28]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[27]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[26]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[25]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[24]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[23]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[22]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[21]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[20]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[19]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[18]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[17]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[16]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[1]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (iaddr_reg[0]) is unused and will be removed from module IF.
+WARNING: [Synth 8-3332] Sequential element (id_aluop_o_reg[6]) is unused and will be removed from module ID.
+WARNING: [Synth 8-3332] Sequential element (exe_aluop_reg[7]) is unused and will be removed from module idexe_reg.
+WARNING: [Synth 8-3332] Sequential element (exe_aluop_reg[6]) is unused and will be removed from module idexe_reg.
+WARNING: [Synth 8-3332] Sequential element (exe_aluop_o_reg[7]) is unused and will be removed from module exe_stage.
+WARNING: [Synth 8-3332] Sequential element (exe_aluop_o_reg[6]) is unused and will be removed from module exe_stage.
+WARNING: [Synth 8-3332] Sequential element (exemem_reg0/mem_aluop_reg[7]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (exemem_reg0/mem_aluop_reg[6]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (mem_whilo_o_reg) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[63]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[62]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[61]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[60]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[59]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[58]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[57]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[56]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[55]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[54]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[53]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[52]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[51]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[50]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[49]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[48]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[47]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[46]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[45]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[44]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[43]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[42]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[41]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[40]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[39]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[38]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[37]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[36]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[35]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[34]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[33]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[32]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[31]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[30]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[29]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[28]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[27]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[26]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[25]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[24]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[23]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[22]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[21]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[20]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[19]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[18]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[17]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[16]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[15]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[14]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[13]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[12]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[11]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[10]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[9]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[8]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[7]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[6]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[5]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[4]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[3]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[2]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[1]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (mem_hilo_o_reg[0]) is unused and will be removed from module mem_stage.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_whilo_reg) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[63]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[62]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[61]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[60]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[59]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[58]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[57]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[56]) is unused and will be removed from module MIPS32.
+WARNING: [Synth 8-3332] Sequential element (memwb_reg0/wb_hilo_reg[55]) is unused and will be removed from module MIPS32.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 845.434 ; gain = 538.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clocking/clk_out1' to pin 'clocking/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clocking/clk_out2' to pin 'clocking/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 923.703 ; gain = 616.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 940.047 ; gain = 633.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:43 ; elapsed = 00:01:46 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |program_rom0  |         1|
+|3     |ram0          |         1|
+|4     |ram1          |         1|
+|5     |ram2          |         1|
+|6     |ram3          |         1|
+|7     |multu         |         1|
+|8     |mult          |         1|
+|9     |divu          |         1|
+|10    |div           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_wiz_0    |     1|
+|2     |div          |     1|
+|3     |divu         |     1|
+|4     |mult         |     1|
+|5     |multu        |     1|
+|6     |program_rom0 |     1|
+|7     |ram0         |     1|
+|8     |ram1         |     1|
+|9     |ram2         |     1|
+|10    |ram3         |     1|
+|11    |BUFG         |    12|
+|12    |CARRY4       |    37|
+|13    |LUT1         |    57|
+|14    |LUT2         |   209|
+|15    |LUT3         |   177|
+|16    |LUT4         |   184|
+|17    |LUT5         |   457|
+|18    |LUT6         |  1837|
+|19    |MUXF7        |   401|
+|20    |MUXF8        |   128|
+|21    |FDRE         |  1783|
+|22    |FDSE         |    88|
+|23    |LD           |    49|
+|24    |LDC          |  1231|
+|25    |IBUF         |    25|
+|26    |OBUF         |    44|
++------+-------------+------+
+
+Report Instance Areas: 
++------+------------------+-----------+------+
+|      |Instance          |Module     |Cells |
++------+------------------+-----------+------+
+|1     |top               |           |  7045|
+|2     |  LED0            |LED        |    24|
+|3     |  dialSwitch0     |dialSwitch |    34|
+|4     |  dmemory32       |dmemory32  |    67|
+|5     |  mips32          |MIPS32     |  6646|
+|6     |    IF0           |IF         |    46|
+|7     |    ID0           |ID         |   349|
+|8     |      PCAddFour   |PCAddFour  |    36|
+|9     |      PCAddImm_en |PCAddImm   |     8|
+|10    |    IR_reg0       |IR_reg     |   600|
+|11    |    cp0           |CP0        |  1488|
+|12    |    exe_stage0    |exe_stage  |   513|
+|13    |    exemem_reg0   |exemem_reg |   293|
+|14    |    hilo0         |hilo       |    65|
+|15    |    idexe_reg0    |idexe_reg  |  1058|
+|16    |    mem_stage0    |mem_stage  |    45|
+|17    |    memwb_reg0    |memwb_reg  |   237|
+|18    |    regfile0      |regfile    |  1952|
+|19    |  nixieTube0      |nixieTube  |   158|
++------+------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 225 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:42 . Memory (MB): peak = 1032.191 ; gain = 472.176
+Synthesis Optimization Complete : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1032.191 ; gain = 725.480
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1871 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1280 instances were transformed.
+  LD => LDCE: 49 instances
+  LDC => LDCE: 1217 instances
+  LDC => LDCE (inverted pins: G): 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+201 Infos, 338 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:01:59 . Memory (MB): peak = 1032.191 ; gain = 737.977
+INFO: [Common 17-1381] The checkpoint 'E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/synth_1/MIPS32_SYS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPS32_SYS_utilization_synth.rpt -pb MIPS32_SYS_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1032.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 17 11:35:25 2021...

@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../cpu_1.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../cpu_1.srcs/sources_1/ip/ram3/ram3_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/ram2/ram2_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/ram1/ram1_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/ram0/ram0_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/div/div_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/divu/divu_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/mult/mult_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/multu/multu_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/program_rom0/program_rom0_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../cpu_1.srcs/sources_1/new/CP0.v" \
+"../../../../cpu_1.srcs/sources_1/new/DataSelector_4to1.v" \
+"../../../../cpu_1.srcs/sources_1/new/LED.v" \
+"../../../../cpu_1.srcs/sources_1/new/MIPS32.v" \
+"../../../../cpu_1.srcs/sources_1/new/MIPS32_SYS.v" \
+"../../../../cpu_1.srcs/sources_1/new/Main.v" \
+"../../../../cpu_1.srcs/sources_1/new/dialSwitch.v" \
+"../../../../cpu_1.srcs/sources_1/new/dmemory32.v" \
+"../../../../cpu_1.srcs/sources_1/new/keyboard.v" \
+"../../../../cpu_1.srcs/sources_1/new/nixieTube.v" \
+"../../../../cpu_1.srcs/sim_1/new/MIPS32SYS_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

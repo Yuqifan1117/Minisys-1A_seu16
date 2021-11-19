@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ram3_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1610846966">
+  <File Type="PA-TCL" Name="ram3.tcl"/>
+  <File Type="REPORTS-TCL" Name="ram3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ram3.vds"/>
+  <File Type="RDS-UTIL" Name="ram3_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ram3_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ram3.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ram3">
+    <File Path="$PSRCDIR/sources_1/ip/ram3/ram3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ram3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ram3">
+    <File Path="$PSRCDIR/sources_1/ip/ram3/ram3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ram3"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

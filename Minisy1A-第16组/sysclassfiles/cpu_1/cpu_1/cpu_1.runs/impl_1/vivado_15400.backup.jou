@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jan 17 10:58:18 2021
+# Process ID: 15400
+# Current directory: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/impl_1
+# Command line: vivado.exe -log MIPS32_SYS.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MIPS32_SYS.tcl -notrace
+# Log file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/impl_1/MIPS32_SYS.vdi
+# Journal file: E:/sysclassfiles/cpu_1/cpu_1/cpu_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MIPS32_SYS.tcl -notrace
